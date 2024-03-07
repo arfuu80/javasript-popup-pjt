@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <marquee  direction="left" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> <img src="/logo.png" style="height: 50px; width: 50px;">The acronym  <strong>BMW</strong> stands for <STrong>Bayerische Motoren Werke</STrong> GmbH, which roughly translates to the Bavarian Engine Works Company. </marquee>
+  <div class="container">
+ 
+    <div class="image">
+      <img src="/photo-1626381958625-bmw.avif" alt="">
+    </div>
+    <div class="box">
+      <img src="/logo.png" alt="" style="height: 20vh;
+      width: 10%;
+      position: absolute;
+      margin-left: -30%;">
+      <h1>Contact Us</h1>
+      <form>
+        <input id="name" type="text" required placeholder="First name"><br>
+        <input id="lastname" type="text" required placeholder="Last name"><br>
+        <input id="number" type="number" required placeholder="Mobile number"><br>
+        <input id="email" type="email" required placeholder="Email Address">
+        <input id="password" type="password" required maxlength="8" placeholder="Password">
+        <input id="repassword" type="password"required maxlength="8" placeholder="Re-Type Password">
+
+        <label for="cars"  >Country</label>
+        <select class="cars">
+          <option value="volvo">India</option>
+          <option value="saab">America</option>
+          <option value="opel">Australlia</option>
+          <option value="audi">Japan</option>
+        </select><br>
+        <button id="btn" >Submit</button>
+      </form>
+      
+    </div>
+    <div class="image1">
+    </div>
+  </div>
+<script src="/popup.js"></script>
+<script>
+  let btn =document.getElementById("btn")
+let name =document.getElementById("name")
+let lastname =document.getElementById("lastname")
+let number=document.getElementById("number")
+let email=document.getElementById("email")
+let password=document.getElementById("password")
+let repassword=document.getElementById("repassword")
+
+btn.addEventListener("click",()=>{
+   if(name.value=="" || lastname.value=="" || number.value=="" || email.value=="" || password.value=="" || repassword.value=="" ){
+      alert("Fill the all sections")
+   }
+   else{
+    alert("Thanks for logging further information i will send your email")
+   }
+});
+
+
+
+</script>
+</body>
+
+</html>
